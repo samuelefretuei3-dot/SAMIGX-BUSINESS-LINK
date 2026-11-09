@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+nav button{
+    text-transform: capitalize;
+}
+
+main {
+   background:linear-gradient(to right, rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.781)),url(./gold.png);
+   min-height: 60vh;
+   padding-top: 70px;
+}
+
+.hero-section h3{
+    background: gold;
+    color: #000;
+    width: 200px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.hero-section button{
+    background: transparent;
+    color: white;
+    border:  1px solid gold;
+}
+
+.offers {
+    background: black;
+}
+
+.what-we-offers h3{
+   color: black;
+   text-transform: uppercase;
+   font-size: 18px;
+   text-align: center;
+   align-items: center;
+
+}
+
+.what-we-offers h2{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+
+}
+
+.what-we-offers h2 span {
+    color: gold;
+}
+
+.what-we-offers p{
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+.choose .content img{
+    width: 400px;
+    height: 150px;
+    flex-grow: 1;
+}
+
+.choose{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.direction {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.direction .content img{
+    width: 400px;
+    height: 150px;
+    flex-grow: 1;
+}
+
+.content button{
+    padding: 8px;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 40%;
+    border: 1px solid gold;
+    text-transform: capitalize;
+}
+
+
+footer{
+    background: black;
+    border: 2px solid gold;
+    border-radius: 30px;
+    position: relative;
+}
+
+
+footer h3{
+    color: white;
+    padding: 10px;
+    margin-left: 80px;
+    
+}
+
+footer p{
+    color: white;
+    margin-left: 80px;
+    padding: 5px;
+}
+
+footer button{
+    background-color:gold ;
+    padding: 10px;
+    border: transparent;
+    font-weight: bold;
+    border-radius: 10px;
+    align-items: end;
+    text-transform: capitalize;
+    margin: 0 70px 0 80% ;
+    position: absolute;
+    bottom: 10px;
+
+
+}
+
+
+
+/* =========================================
+   SAMIGX GLOBAL-LINK - RESPONSIVE DESIGN
+   ALL SCREEN SIZES
+========================================= */
+
+/* General screen adjustments */
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Large desktop screens */
+@media (min-width: 1200px) {
+
+    .choose,
+    .direction {
+        gap: 35px;
+        padding: 30px 40px;
+    }
+
+    .choose .content img,
+    .direction .content img {
+        width: 350px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .hero-section {
+        padding: 100px 8%;
+    }
+
+    footer {
+        margin: 20px;
+        padding: 25px;
+    }
+}
+
+/* Laptops */
+@media (max-width: 1199px) {
+
+    .choose,
+    .direction {
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .choose .content img,
+    .direction .content img {
+        width: 300px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    footer button {
+        margin: 0;
+        right: 25px;
+    }
+}
+
+/* Tablets and smaller laptops */
+@media (max-width: 900px) {
+
+    nav {
+        padding: 10px 15px;
+    }
+
+    .lang span img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .logo h3 {
+        font-size: 22px;
+    }
+
+    .choose,
+    .direction {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .choose .content,
+    .direction .content {
+        width: 45%;
+        text-align: center;
+    }
+
+    .choose .content img,
+    .direction .content img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .content button {
+        margin: 12px auto;
+        display: block;
+    }
+
+    .what-we-offers h2 {
+        font-size: 36px;
+    }
+
+    .what-we-offers p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer h3,
+    footer p {
+        margin-left: 20px;
+    }
+
+    footer button {
+        right: 20px;
+        margin: 0;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+
+    /* Navigation */
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .lang {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .lang span img {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+
+    .logo h3 {
+        font-size: 17px;
+        width: auto;
+    }
+
+    /* Hamburger menu */
+    nav label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 7px;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    nav label span {
+        display: block;
+        width: 23px;
+        height: 2px;
+        background: white;
+        z-index: 5;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 55%;
+        max-width: 300px;
+        height: 100vh;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        z-index: 1000;
+        transition: right 0.4s ease;
+    }
+
+    #check:checked ~ .nav-links {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .nav-links button {
+        position: static;
+        margin: 0;
+    }
+
+    /* Hero section */
+    main {
+        min-height: auto;
+        padding: 60px 15px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 25px 5px;
+    }
+
+    .hero-section h3 {
+        width: fit-content;
+        max-width: 100%;
+        margin: 0 auto 20px;
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: clamp(27px, 7vw, 38px);
+        line-height: 1.3;
+    }
+
+    .hero-section p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 15px auto;
+    }
+
+    .hero-section button {
+        padding: 12px 22px;
+        margin-top: 10px;
+    }
+
+    /* Services heading */
+    .what-we-offers {
+        padding: 35px 15px 10px;
+        text-align: center;
+    }
+
+    .what-we-offers h3 {
+        font-size: 15px;
+    }
+
+    .what-we-offers h2 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .what-we-offers p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Service cards */
+    .choose,
+    .direction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 20px 15px;
+    }
+
+    .choose .content,
+    .direction .content {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .choose .content img,
+    .direction .content img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .content button {
+        display: block;
+        margin: 15px auto 0;
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+        position: relative;
+        margin: 15px;
+        padding: 25px 15px;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 5px 0 20px;
+    }
+
+    footer button {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        padding: 12px 22px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+
+    nav {
+        padding: 8px 10px;
+    }
+
+    .lang span img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .logo h3 {
+        font-size: 14px;
+    }
+
+    nav label span {
+        width: 20px;
+        z-index: 5;
+    }
+
+    .hero-section h1 {
+        font-size: 26px;
+    }
+
+    .hero-section p {
+        font-size: 13px;
+    }
+
+    .what-we-offers h2 {
+        font-size: 25px;
+    }
+
+    .what-we-offers p {
+        font-size: 13px;
+    }
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* Extra-small phones */
+@media (max-width: 320px) {
+
+    .logo h3 {
+        font-size: 12px;
+    }
+
+    .lang span img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .hero-section h1 {
+        font-size: 23px;
+    }
+
+    .what-we-offers h2 {
+        font-size: 22px;
+    }
+
+    .choose,
+    .direction {
+        padding: 15px 10px;
+    }
+}
+
+/* Landscape phones */
+@media (max-height: 500px) and (max-width: 900px) {
+
+    .nav-links {
+        overflow-y: auto;
+        justify-content: flex-start;
+        padding: 60px 15px 20px;
+        gap: 15px;
+    }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+

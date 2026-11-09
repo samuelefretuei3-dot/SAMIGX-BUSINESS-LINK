@@ -1,0 +1,1002 @@
+
+/* ==========================================
+   SAMIGX GLOBAL-LINK
+   PROFESSIONAL CONTACT PAGE
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #080808;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ==========================================
+   NAVIGATION BAR
+========================================== */
+
+header {
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%;
+    min-height: 85px;
+    padding: 10px 6%;
+    background: #050505;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+
+#check {
+    display: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand img {
+    width: 53px;
+    height: 53px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.brand h3 {
+    color: white;
+    font-size: 23px;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.brand h3 span {
+    color: gold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: gold;
+}
+
+.nav-links .active {
+    color: gold;
+    border-bottom: 2px solid gold;
+    padding-bottom: 8px;
+}
+
+.nav-links .nav-button {
+    background: gold;
+    color: black;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.nav-links .nav-button:hover {
+    background: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* Hide hamburger on desktop */
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero-section {
+    width: 100%;
+    min-height: 420px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            110deg,
+            rgba(0, 0, 0, 0.96),
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.95)
+        ),
+        url("./gold.png");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-label {
+    display: inline-block;
+    color: gold;
+    border: 1px solid rgba(255, 215, 0, 0.5);
+    border-radius: 30px;
+    padding: 9px 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero-section h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.15;
+    text-transform: capitalize;
+    color: white;
+}
+
+.hero-section h1 span {
+    color: gold;
+}
+
+.hero-section p {
+    max-width: 650px;
+    margin: 22px auto;
+    color: #c4c4c4;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 27px;
+    border-radius: 8px;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact-section {
+    background: #080808;
+    padding: 85px 6%;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading > span {
+    color: gold;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    margin: 18px 0;
+    text-transform: capitalize;
+}
+
+.section-heading h2 span {
+    color: gold;
+}
+
+.section-heading p {
+    color: #aaa;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   CONTACT GRID
+========================================== */
+
+.contact-layout {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+
+/* ==========================================
+   CONTACT INFORMATION CARDS
+========================================== */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 13px;
+    padding: 25px;
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    border-color: gold;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.07);
+}
+
+.info-icon {
+    min-width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 215, 0, 0.1);
+    color: gold;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+.info-card h3 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.info-card p,
+.info-card a {
+    color: #aaa;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+    line-height: 1.6;
+}
+
+.info-card a:hover {
+    color: gold;
+}
+
+.contact-note {
+    background: linear-gradient(135deg, #191500, #0d0d0d);
+    border-left: 3px solid gold;
+    padding: 27px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.contact-note h3 {
+    color: gold;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.contact-note p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   CONTACT FORM
+========================================== */
+
+.form-container {
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 17px;
+    padding: 38px;
+    width: 100%;
+}
+
+.form-container h2 {
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.form-container h2 span {
+    color: gold;
+}
+
+.form-container > p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background: #080808;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-group input {
+    height: 52px;
+}
+
+.form-group textarea {
+    min-height: 145px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: gold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777;
+}
+
+.form-container form button {
+    width: 100%;
+    background: gold;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.form-container form button:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.form-container form button span {
+    margin-left: 8px;
+    font-size: 19px;
+}
+
+
+/* ==========================================
+   BOTTOM CALL TO ACTION
+========================================== */
+
+.bottom-section {
+    margin: 20px 6% 75px;
+    padding: 40px;
+    background: linear-gradient(120deg, #1b1700, #101010);
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.bottom-section h2 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.bottom-section p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.bottom-section a {
+    background: gold;
+    color: black;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.bottom-section a:hover {
+    background: white;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+    background: #030303;
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+    padding: 60px 6% 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 45px;
+}
+
+.footer-brand h2 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 17px;
+}
+
+.footer-brand h2 span {
+    color: gold;
+}
+
+.footer-brand p {
+    max-width: 350px;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-links h3 {
+    color: gold;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #aaa;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: gold;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #222;
+    margin-top: 45px;
+    padding-top: 22px;
+}
+
+.copyright p {
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   TABLETS AND SMALL LAPTOPS
+========================================== */
+
+@media (max-width: 1000px) {
+
+    nav {
+        padding: 10px 3%;
+    }
+
+    .brand h3 {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        gap: 17px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .contact-layout {
+        gap: 25px;
+    }
+
+    .form-container {
+        padding: 28px;
+    }
+
+    .contact-section {
+        padding: 65px 4%;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE NAVIGATION AND TABLETS
+========================================== */
+
+@media (max-width: 750px) {
+
+    nav {
+        min-height: 75px;
+        padding: 10px 18px;
+    }
+
+    .brand img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand h3 {
+        font-size: 18px;
+    }
+
+    /* Hamburger menu */
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 8px;
+        border: 1px solid gold;
+        border-radius: 6px;
+        cursor: pointer;
+        z-index: 1002;
+    }
+
+    .menu-toggle span {
+        width: 23px;
+        height: 2px;
+        background: white;
+        display: block;
+    }
+
+    /* Mobile navigation panel */
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        width: 78%;
+        max-width: 320px;
+        height: 100dvh;
+
+        background: #080808;
+        border-left: 1px solid gold;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+
+        transition: right 0.4s ease;
+        z-index: 1001;
+        overflow-y: auto;
+    }
+
+    #check:checked ~ .nav-links {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .nav-links .nav-button {
+        padding: 13px 25px;
+    }
+
+    /* Hero */
+
+    .hero-section {
+        min-height: 340px;
+        padding: 65px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 43px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    /* Contact layout */
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+        gap: 35px;
+    }
+
+    .contact-section {
+        padding: 60px 25px;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    /* CTA */
+
+    .bottom-section {
+        margin: 15px 4% 55px;
+        padding: 30px;
+    }
+
+    .bottom-section h2 {
+        font-size: 21px;
+    }
+
+    /* Footer */
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media (max-width: 480px) {
+
+    nav {
+        padding: 10px 12px;
+    }
+
+    .brand {
+        gap: 8px;
+    }
+
+    .brand img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .brand h3 {
+        font-size: 15px;
+    }
+
+    .menu-toggle {
+        padding: 7px;
+    }
+
+    .menu-toggle span {
+        width: 20px;
+    }
+
+    /* Hero */
+
+    .hero-section {
+        min-height: 300px;
+        padding: 55px 17px;
+    }
+
+    .hero-label {
+        font-size: 10px;
+        padding: 8px 14px;
+    }
+
+    .hero-section h1 {
+        font-size: 34px;
+    }
+
+    .hero-section p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .hero-button {
+        padding: 12px 21px;
+        font-size: 13px;
+    }
+
+    /* Contact */
+
+    .contact-section {
+        padding: 45px 16px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .section-heading p {
+        font-size: 13px;
+    }
+
+    .info-card {
+        padding: 20px 16px;
+        gap: 14px;
+    }
+
+    .info-icon {
+        min-width: 43px;
+        height: 43px;
+        font-size: 21px;
+    }
+
+    .info-card h3 {
+        font-size: 15px;
+    }
+
+    .info-card p,
+    .info-card a {
+        font-size: 12px;
+    }
+
+    .contact-note {
+        padding: 22px;
+    }
+
+    .contact-note h3 {
+        font-size: 18px;
+    }
+
+    .form-container {
+        padding: 23px 17px;
+    }
+
+    .form-container h2 {
+        font-size: 25px;
+    }
+
+    .form-container > p {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        height: 48px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 13px;
+        font-size: 13px;
+    }
+
+    /* CTA */
+
+    .bottom-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 27px 18px;
+        margin: 10px 15px 45px;
+    }
+
+    .bottom-section h2 {
+        font-size: 20px;
+    }
+
+    .bottom-section p {
+        font-size: 13px;
+    }
+
+    .bottom-section a {
+        padding: 12px 25px;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 40px 20px 18px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 15px;
+    }
+
+    .footer-brand h2 {
+        font-size: 20px;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
+    }
+
+    .footer-links h3 {
+        font-size: 15px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+    .copyright p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL PHONES
+========================================== */
+
+@media (max-width: 350px) {
+
+    .brand img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .brand h3 {
+        font-size: 13px;
+    }
+
+    .menu-toggle span {
+        width: 18px;
+    }
+
+    .hero-section h1 {
+        font-size: 29px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .info-card {
+        padding: 17px 12px;
+    }
+
+    .form-container {
+        padding: 19px 13px;
+    }
+
+    .form-container h2 {
+        font-size: 22px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+}
+
+
+/* ==========================================
+   LANDSCAPE PHONE SUPPORT
+========================================== */
+
+@media (max-height: 500px) and (max-width: 900px) {
+
+    .nav-links {
+        justify-content: flex-start;
+        padding: 65px 15px 25px;
+        gap: 18px;
+        overflow-y: auto;
+    }
+
+}
+
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+
+}

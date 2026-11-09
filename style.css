@@ -1,0 +1,1131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+ }  
+ 
+ 
+ nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.973);
+    padding: 5px;
+    gap: 90px;
+    position: fixed;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    /* flex-wrap: wrap; */
+
+ }
+
+
+ nav label{
+      
+    display: flex;     
+     flex-direction: column;
+     align-items: center;
+     gap:5px ;
+     margin-right: 70px;
+     justify-content: center;
+     border: 2px solid white;
+     padding: 8px;
+     border-radius: 8px;
+    
+
+}
+
+nav label span{
+    background-color: white; 
+    align-items: center;
+    width: 25px;
+    height: 2px;                                                      
+}
+
+
+
+
+ .lang span img{
+   gap: 5px;
+ }
+
+ a button:hover{
+   color: gold;
+   flex-grow: 1;
+ }
+
+nav :hover{
+  color:gold;
+}
+
+   header{
+   align-items: center;
+   position: fixed;
+   width: 100%;
+   z-index: 1000;
+}
+
+ nav .logo img{
+    gap: 50px;
+    margin-left: 0;
+    height: 100px;
+    border-radius: 8px;
+ }
+
+  nav button{
+    background:gold;
+    padding: 10px 25px;
+    border-radius: 8px;
+    display: flex;
+    font-weight: bold;
+    border: transparent;
+    text-transform: capitalize;
+    font-size: 17px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+
+
+    }
+
+
+  nav .logo span{
+   color: gold;
+  }
+
+  nav .logo h3{
+   font-size: 30px;
+   width: 200px;
+   color: white;
+   padding-left: 30px;
+   text-transform: capitalize;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+ a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 40px;
+    padding: 20px;
+    text-transform: capitalize;
+ }
+
+ main{
+    background:linear-gradient(to left, rgba(0, 0, 0, 0.178),rgba(14, 13, 13, 0), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.836)),url(./Luxurious\ SAMIGX\ Global\ Link\ Workspace.png);
+    background-position:center ;
+    min-height: 100vh;
+ }
+
+  .hero-section{
+   padding: 230px 100px;
+  }
+
+
+  .active{
+     border-bottom: 1px solid gold;
+     color: gold;
+     animation:buttom 1s infinite;
+  }
+
+  @keyframes buttom{
+    from{
+      transform: translateY(0);
+    }
+
+    to{
+      transform: translateY(10px);
+    }
+  }
+
+ .hero-section h1{
+   font-size: 45px;
+   width: 400px;
+   text-transform: uppercase;
+   line-height: 50px;
+   color:white;
+ }
+
+ nav .lang{
+   display: flex;
+   align-items: center;
+ }
+
+ .hero-section p{
+   color: white;
+   width: 300px;
+   line-height: 30px;
+ }
+
+
+  .hero-section h1 span{
+   color:gold;
+  }
+
+   .hero-section button{
+      padding: 12px 25px;
+      font-size: 15px;
+      text-transform: capitalize;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 30px 0 0 10px ;
+      border: transparent;
+      background: gold;
+      gap: 10px;
+   }
+
+   .hero-section span button{
+      background: white;
+      border: 1px  solid;
+   
+   }
+
+   .hero-section h3{
+    color: gold;
+    text-transform: uppercase;
+   }
+
+   main .hero-section h1{
+    width: 100%;
+    text-transform: capitalize;
+   }
+
+   main .hero-section p{
+    width: 400px;
+   }
+
+   .mini-section{
+    background: linear-gradient(to right, #000, #000000ea, #000000e8, #000000e0, #000000ab);
+    padding: 20px;
+    width: 100%;
+    
+   }
+
+   .mini-section h3{
+    color: gold;
+    margin-left: 40px;
+    padding-bottom: 10px;
+
+   }
+
+   .mini-section h2{
+    color: white;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-left: 40px;
+   }
+
+   .mini-section p{
+    color: white;
+    margin-left:40px ;
+    width: 300px;
+    line-height: 30px;
+
+   }
+
+   .mini-section button{
+     background: gold;
+     padding: 12px;
+     margin-left: 40px;
+     text-transform: capitalize;
+     border-radius: 17px;
+     border: transparent;
+   }
+
+   .mini-section h2 span{
+    color: gold;
+   }
+
+   .accessories
+   {
+    display: flex;
+    gap: 15px;
+    background: black;
+    flex-wrap: wrap;
+   }
+
+   .each-of-them img{
+    width: 250px;
+    border-radius: 10px;
+    flex-grow: 1;
+    animation: display 7s 1 ;
+  
+   }
+
+   @keyframes display{
+    from {
+      transform: scale(0);
+    }
+
+    to{
+      transform: scale(100px);
+    }
+   }
+
+   footer{
+    background: #000;
+   }
+
+   .footer{
+    background: black;
+    display: flex;
+    align-items: center;
+    border: 2px solid gold;
+    border-radius: 20px;
+    position: relative;
+    flex-wrap: wrap;
+
+   }
+
+   .footer h3{
+    color: gold;
+    text-transform: capitalize;
+    padding-left: 30px;
+    margin-top: 40px;
+   }
+
+   .footer h2{
+     color: white;
+     text-transform: capitalize;
+     font-family: sans-serif;
+     font-size: 30px;
+     padding: 10px 0 0 30px;  
+     }
+
+     .last{
+      border-left: 2px solid gold;
+      margin-left: 20px;
+      flex-grow: 1;
+     }
+
+     .start-here p{
+
+      color: white;
+      padding: 10px;
+      flex-grow: 1;
+
+     }
+
+     .start-here button{
+      background: gold;
+      text-transform: capitalize;
+      padding: 10px;
+      border-radius: 10px;
+      border: transparent;
+      position: absolute;
+      right: 90px;
+     }
+
+   
+/* GLOBAL RESPONSIVENESS */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav label {
+    display: none;
+}
+
+nav .logo h3 {
+    font-size: clamp(20px, 3vw, 30px);
+    width: auto;
+    padding-left: 10px;
+}
+
+nav .lang img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-links a {
+    padding: 12px;
+    font-size: 16px;
+}
+
+nav .nav-links button {
+    position: static;
+    font-size: 15px;
+}
+
+/* HERO SECTION */
+.hero-section {
+    padding: clamp(100px, 17vw, 230px) 8%;
+}
+
+.hero-section h1 {
+    font-size: clamp(30px, 5vw, 45px);
+    line-height: 1.2;
+    max-width: 100%;
+}
+
+.hero-section p,
+main .hero-section p {
+    width: 100%;
+    max-width: 400px;
+    line-height: 1.8;
+}
+
+/* ACCESSORIES */
+.accessories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+.each-of-them {
+    flex: 1 1 220px;
+    max-width: 300px;
+}
+
+.each-of-them img {
+    width: 100%;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    padding: 20px;
+}
+
+.start-here button {
+    position: static;
+    margin: 15px;
+}
+
+/* CONTACT SECTION */
+.contact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 5%;
+}
+
+.veiw-it-here {
+    flex: 1 1 250px;
+    min-width: 0;
+}
+
+.adress {
+    margin-bottom: 25px;
+    overflow-wrap: anywhere;
+}
+
+.contact form {
+    flex: 1 1 350px;
+    max-width: 550px;
+    min-width: 0;
+}
+
+.contact form input,
+.contact form textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.contact form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+
+/* ==========================================
+   SAMIGX GLOBAL-LINK
+   COMPLETE RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+/* GLOBAL BODY RESPONSIVENESS */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* NAVIGATION DEFAULT */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+nav .lang {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav .lang img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+nav .logo h3 {
+    width: auto;
+    font-size: clamp(18px, 2.5vw, 30px);
+    padding-left: 5px;
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+nav .nav-links a {
+    padding: 10px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+nav label {
+    display: none;
+}
+
+#check {
+    position: absolute;
+    opacity: 0;
+}
+
+/* BODY AND HERO SECTION */
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: 650px;
+    padding: 180px 8% 100px;
+}
+
+.hero-section h1 {
+    max-width: 100%;
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.2;
+}
+
+.hero-section p {
+    width: 100%;
+    max-width: 440px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+.hero-section button {
+    cursor: pointer;
+}
+
+/* MINI SECTION */
+.mini-section {
+    width: 100%;
+    padding: 30px;
+}
+
+.mini-section h3,
+.mini-section h2,
+.mini-section p,
+.mini-section button {
+    max-width: 100%;
+    margin-left: 0;
+}
+
+.mini-section h2 {
+    font-size: clamp(25px, 4vw, 38px);
+}
+
+.mini-section p {
+    width: 100%;
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+/* ACCESSORIES SECTION */
+.accessories {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.each-of-them {
+    width: 100%;
+    min-width: 0;
+}
+
+.each-of-them img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* FOOTER SECTION */
+footer {
+    width: 100%;
+    padding: 15px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 25px;
+}
+
+.footer > span img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.last {
+    flex: 1;
+    min-width: 0;
+}
+
+.footer h2 {
+    font-size: clamp(22px, 3vw, 32px);
+    padding: 10px 0;
+}
+
+.footer h3 {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.start-here {
+    flex: 1;
+    min-width: 0;
+}
+
+.start-here p {
+    line-height: 1.8;
+}
+
+.start-here button {
+    position: static;
+    margin-top: 15px;
+}
+
+/* ==========================================
+   LARGE DESKTOP SCREENS
+   1440px AND ABOVE
+   ========================================== */
+
+@media screen and (min-width: 1440px) {
+
+    .hero-section {
+        padding-left: 10%;
+    }
+
+    .accessories {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .each-of-them img {
+        height: 280px;
+    }
+}
+
+/* ==========================================
+   LAPTOPS
+   1025px - 1439px
+   ========================================== */
+
+@media screen and (min-width: 1025px)
+and (max-width: 1439px) {
+
+    nav {
+        gap: 10px;
+    }
+
+    nav .nav-links a {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    nav .logo h3 {
+        font-size: 24px;
+    }
+
+    .hero-section {
+        padding: 180px 7% 90px;
+    }
+
+    .accessories {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer {
+        gap: 20px;
+    }
+}
+
+/* ==========================================
+   TABLETS
+   769px - 1024px
+   ========================================== */
+
+@media screen and (max-width: 1024px) {
+
+    nav {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    nav .logo h3 {
+        font-size: 22px;
+    }
+
+    nav .nav-links a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .hero-section {
+        padding: 160px 7% 80px;
+    }
+
+    .accessories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .each-of-them img {
+        height: 220px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+/* ==========================================
+   TABLETS AND SMALL LAPTOPS
+   MAX WIDTH 850px
+   ========================================== */
+
+@media screen and (max-width: 850px) {
+
+    nav {
+        min-height: 70px;
+    }
+
+    nav label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin: 0;
+        padding: 9px;
+        cursor: pointer;
+        z-index: 1003;
+    }
+
+    nav .nav-links {
+        position: fixed;
+        top: 0;
+        right: -110%;
+        width: min(80%, 340px);
+        height: 100vh;
+        background: #000;
+        padding: 90px 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 15px;
+        overflow-y: auto;
+        transition: 0.4s ease;
+        z-index: 1002;
+    }
+
+    #check:checked ~ .nav-links {
+        right: 0;
+    }
+
+    nav .nav-links a {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    nav .nav-links button {
+        position: static;
+        width: 100%;
+    }
+
+    .hero-section {
+        min-height: 600px;
+        padding: 150px 7% 80px;
+    }
+
+    .accessories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==========================================
+   IPAD AND TABLETS
+   MAX WIDTH 768px
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .hero-section p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .mini-section h2 {
+        font-size: 30px;
+    }
+
+    .accessories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .each-of-them img {
+        height: 220px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .last {
+        width: 100%;
+        border-left: none;
+        border-top: 2px solid gold;
+        padding-top: 20px;
+    }
+
+    .start-here {
+        width: 100%;
+    }
+}
+
+/* ==========================================
+   LARGE MOBILE PHONES
+   MAX WIDTH 600px
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        padding: 10px;
+    }
+
+    nav .lang img {
+        width: 45px;
+        height: 45px;
+    }
+
+    nav .logo h3 {
+        font-size: 20px;
+    }
+
+    .hero-section {
+        min-height: 530px;
+        padding: 130px 25px 70px;
+    }
+
+    .hero-section h1 {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
+    .hero-section p {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .hero-section button {
+        padding: 11px 15px;
+        font-size: 14px;
+        margin: 15px 5px 0 0;
+    }
+
+    .mini-section {
+        padding: 25px 18px;
+    }
+
+    .mini-section h2 {
+        font-size: 27px;
+    }
+
+    .mini-section p {
+        width: 100%;
+    }
+
+    .accessories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .each-of-them img {
+        height: 180px;
+    }
+
+    .footer {
+        padding: 18px;
+    }
+
+    .footer h2 {
+        font-size: 24px;
+    }
+}
+
+/* ==========================================
+   IPHONE AND ANDROID PHONES
+   MAX WIDTH 430px
+   ========================================== */
+
+@media screen and (max-width: 430px) {
+
+    nav {
+        padding: 8px 10px;
+    }
+
+    nav .lang img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav .logo h3 {
+        font-size: 18px;
+    }
+
+    nav label {
+        padding: 7px;
+    }
+
+    .hero-section {
+        min-height: 480px;
+        padding: 115px 18px 55px;
+    }
+
+    .hero-section h1 {
+        font-size: 31px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-section button {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .mini-section h2 {
+        font-size: 25px;
+    }
+
+    .mini-section p {
+        font-size: 14px;
+    }
+
+    .each-of-them img {
+        height: 155px;
+    }
+
+    .footer h2 {
+        font-size: 22px;
+    }
+}
+
+/* ==========================================
+   IPHONE SE AND SMALL PHONES
+   MAX WIDTH 375px
+   ========================================== */
+
+@media screen and (max-width: 375px) {
+
+    nav .lang img {
+        width: 35px;
+        height: 35px;
+    }
+
+    nav .logo h3 {
+        font-size: 16px;
+    }
+
+    nav label {
+        padding: 6px;
+    }
+
+    .hero-section {
+        padding: 105px 15px 50px;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 13px;
+    }
+
+    .hero-section button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .accessories {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .each-of-them img {
+        height: 140px;
+    }
+
+    .footer {
+        padding: 14px;
+    }
+}
+
+/* ==========================================
+   EXTRA SMALL PHONES
+   MAX WIDTH 320px
+   ========================================== */
+
+@media screen and (max-width: 320px) {
+
+    nav .logo h3 {
+        font-size: 14px;
+    }
+
+    nav .lang img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .hero-section h1 {
+        font-size: 25px;
+    }
+
+    .hero-section button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .accessories {
+        grid-template-columns: 1fr;
+    }
+
+    .each-of-them img {
+        height: 210px;
+    }
+
+    .nav-links {
+        width: 85%;
+    }
+}
+
+/* ==========================================
+   LANDSCAPE MOBILE PHONES
+   ========================================== */
+
+@media screen and (max-height: 500px)
+and (orientation: landscape) {
+
+    .hero-section {
+        min-height: 450px;
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    nav .nav-links {
+        padding-top: 65px;
+        overflow-y: auto;
+    }
+}
+
+/* ==========================================
+   REDUCED ANIMATION
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
